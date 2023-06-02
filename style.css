@@ -1,15 +1,16 @@
 h1.a
 {
 	color: rgb(12, 74, 77); 
-	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-	font-variant: small-caps;
+	font-size: 700%;
+	font-family: 'Brush Script MT', cursive;
+	/* font-variant: small-caps; */
 }
 p.a
 {
 	color: rgb(3, 5, 139); 
 	font-size: x-large; 
 	font-weight: 600;
-	font-family: 'Apple Chancery', cursive;
+	font-family: 'Helvetica', sans-serif;
 	font-variant: small-caps;
 }
 
@@ -18,14 +19,20 @@ nav img {
 	margin-right: 10px;
 }
 
-.navbar 
+/* .navbar 
 {
 
 }
-.navbar-brand, .navbar-nav .nav-link 
+.navbar-brand, .navbar-nav  
 {
 	color: #ff0000;
 }
+
+.nav-link
+{
+	color:black;
+} */
+
 .carousel-item 
 {
 	height: 75vh;
@@ -42,8 +49,8 @@ nav img {
 }
 body 
 {
-	background: rgb(238,174,202);
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background: rgb(241,247,237);
+	background: radial-gradient(circle, rgba(241,247,237,1) 0%, rgba(224,242,226,1) 33%, rgba(88,153,129,1) 100%);
 }
 
 iframe {
