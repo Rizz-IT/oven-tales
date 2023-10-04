@@ -1,16 +1,110 @@
-h1.a
-{
-	color: rgb(12, 74, 77); 
+div.wb {
+	display: block;
+	margin: auto;
+	width: 20%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#upper-bowl,
+#lower-bowl,
+#batter {
+	animation: bowl 0.85s linear infinite;
+	transform-origin: center;
+}
+
+@keyframes bowl {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(-10deg);
+	}
+
+	50% {
+		transform: rotateZ(0deg);
+	}
+
+	75% {
+		transform: rotateZ(10deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+#whisk {
+	animation: whisk 1s linear infinite;
+	transform-origin: center;
+}
+
+@keyframes whisk {
+	0% {
+		transform: rotateZ(0deg) translate(0px, 0px);
+	}
+
+	25% {
+		transform: scale(1.1) rotateZ(-5deg) translate(-20px, 0px);
+	}
+
+	50% {
+		transform: scale(1) rotateZ(0deg) translate(-40px, 0px);
+	}
+
+	75% {
+		transform: scale(0.9) rotateZ(10deg) translate(-20px, 0px);
+	}
+
+	100% {
+		transform: rotateZ(0deg) translate(0px, 0px);
+	}
+}
+
+#batter {
+	animation: batter 0.85s linear infinite;
+	transform-origin: center;
+}
+
+@keyframes batter {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(-10deg) scaleY(1.2);
+	}
+
+	50% {
+		transform: rotateZ(0deg) scaleY(1);
+	}
+
+	75% {
+		transform: rotateZ(10deg) scaleY(0.9);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+
+
+h1.a {
+	color: rgb(12, 74, 77);
 	font-size: 700%;
 	font-family: 'Brush Script MT', cursive;
 	/* font-variant: small-caps; */
 }
-p.a
-{
-	color: rgb(3, 5, 139); 
-	font-size: x-large; 
+
+p.a {
+	color: rgb(3, 5, 139);
+	font-size: x-large;
 	font-weight: 600;
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Brush Script MT', cursive;
 	font-variant: small-caps;
 }
 
@@ -32,9 +126,8 @@ nav img {
 {
 	color:black;
 } */
-
-.carousel-item 
-{
+/* 
+.carousel-item {
 	height: 75vh;
 	min-height: 300px;
 	background: no-repeat center center scroll;
@@ -43,17 +136,12 @@ nav img {
 	-o-background-size: cover;
 	background-size: cover;
 }
-.card 
-{
-	margin: 20px;
-}
-body 
-{
-	background: rgb(241,247,237);
-	background: radial-gradient(circle, rgba(241,247,237,1) 0%, rgba(224,242,226,1) 33%, rgba(88,153,129,1) 100%);
-}
 
-iframe {
-	display: block; /* Set display property to block */
-	margin: 0 auto; /* Set margin to auto to center horizontally */ 
+.card {
+	margin: 20px;
+} */
+
+body {
+	background: rgb(241, 247, 237);
+	background: radial-gradient(circle, rgba(241, 247, 237, 1) 0%, rgba(224, 242, 226, 1) 33%, rgba(88, 153, 129, 1) 100%);
 }
